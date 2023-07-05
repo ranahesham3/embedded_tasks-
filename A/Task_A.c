@@ -54,9 +54,11 @@ else if(choice==2)
     int x;
     printf("enter the roll number \n");
     scanf("%d",&x);
+
     int i,j;
     printf("if you want to modify name enter 1,roll number enter 2,marks enter 3 \n");
     scanf("%d",&i);
+
     if(i==1)
         gets(student[x-1].name);
     else if(i==2)
