@@ -40,7 +40,7 @@ ES_t DIO_enuSetPortDirection(u8 Copy_u8PortID,u8 Copy_u8Value);
 
 ES_t DIO_enuSetPortValue(u8 Copy_u8PortID,u8 Copy_u8Value);
 
-ES_t DIO_enuTogPortValue(u8 Copy_u8PortID,u8 Copy_u8Value);
+ES_t DIO_enuTogPortValue(u8 Copy_u8PortID);
 
 ES_t DIO_enuGetPortValue(u8 Copy_u8PortID , u8 * Copy_pu8Value);
 

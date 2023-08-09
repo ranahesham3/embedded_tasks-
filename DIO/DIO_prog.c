@@ -97,7 +97,7 @@ ES_t DIO_enuSetPortValue(u8 Copy_u8PortID,u8 Copy_u8Value)
 
 
 
-ES_t DIO_enuTogPortValue(u8 Copy_u8PortID,u8 Copy_u8Value)
+ES_t DIO_enuTogPortValue(u8 Copy_u8PortID)
 {
 	ES_t Local_enuErrorstate=ES_NOK;
 	if( Copy_u8PortID<=DIO_PORTD)
@@ -142,13 +142,13 @@ ES_t DIO_enuGetPortValue(u8 Copy_u8PortID,u8* Copy_pu8Value)
 				*Copy_pu8Value=PORTA;
 				break;
 			case DIO_PORTB:
-				Copy_pu8Value=PORTB;
+				*Copy_pu8Value=PORTB;
 				break;
 			case DIO_PORTC:
-				Copy_pu8Value=PORTC;
+				*Copy_pu8Value=PORTC;
 				break;
 			case DIO_PORTD:
-				Copy_pu8Value=PORTD;
+				*Copy_pu8Value=PORTD;
 				break;
 			}
 			Local_enuErrorstate=ES_OK;
